@@ -11,7 +11,7 @@ function App() {
     <>
         <div className='bg-gambar w-full h-screen px-72 py-28 flex'>
           <Navbar />
-          <div className="bg-white bg-opacity-60 backdrop-blur-sm w-full rounded-r-lg drop-shadow-2xl flex flex-col">
+          <div className="bg-white bg-opacity-60 shadow-inner shadow-2xl backdrop-blur-sm w-full rounded-r-lg drop-shadow-2xl flex flex-col">
             <Routes>
               <Route path='/' element={<Home />} />
               <Route path='/home' element={<Home />} />

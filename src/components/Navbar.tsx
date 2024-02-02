@@ -5,7 +5,7 @@ import { Tooltip } from "@nextui-org/react";
 
 const Navigation = () => {
   return (
-    <div className="bg-teal-500 bg-opacity-60 backdrop-blur-sm drop-shadow-2xl text-4xl gap-16 flex flex-col items-center justify-center rounded-l-lg h-full w-20">
+    <div className="bg-teal-500 bg-opacity-60 shadow-2xl shadow-inner backdrop-blur-sm drop-shadow-2xl text-4xl gap-16 flex flex-col items-center justify-center rounded-l-lg h-full w-20">
       <Tooltip content="Home Page" color="default">
         <NavLink to="/home">
           <IoIosHome className="hover:text-white" />
