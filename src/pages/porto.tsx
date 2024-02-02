@@ -1,9 +1,13 @@
-
+import { motion } from "framer-motion"
 const porto = () => {
   return (
-    <div>
-        porto
-    </div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+      porto
+    </motion.div>
   )
 }
 

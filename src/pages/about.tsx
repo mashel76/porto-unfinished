@@ -1,10 +1,13 @@
 import { Divider, Tabs, Tab, Card, CardBody } from "@nextui-org/react";
-
+import { motion } from "framer-motion"
 const About = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}>
       <div className="m-10 flex gap-5">
-        <img src="./avatar.jpg" className="w-40 h-40 rounded-full"/>
+        <img src="./avatar.jpg" className="w-40 h-40 rounded-full" />
         <div className="text-justify w-3/5 pt-8">
           <p>Nostrud sint officia sit adipisicing consequat nisi adipisicing sunt voluptate non. Ut et ea exercitation adipisicing aliquip deserunt consectetur. Laborum qui sit occaecat non eu nisi Lorem dolore aute sit qui occaecat. Sunt sit quis laboris veniam Lorem consequat nostrud occaecat eiusmod ipsum.</p>
         </div>
@@ -38,7 +41,7 @@ const About = () => {
           </Tabs>
         </div>
       </div>
-    </>
+    </motion.div>
   )
 }
 
