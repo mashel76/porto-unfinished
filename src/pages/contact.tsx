@@ -9,10 +9,10 @@ const contact = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ x: 50, opacity: 1 }}
+      animate={{ x: 10, opacity: 1 }}
       exit={{ opacity: 0 }}
       className="mx-10 my-20 flex flex-col gap-24">
-      <Popover defaultOpen='true' placement="right-start" className="w-4/6 h-32 text">
+      <Popover defaultOpen placement="right-start" className="w-4/6 h-32 text">
         <PopoverTrigger className="ease-in-out duration-100 scale-110">
           <a className="w-[90px] h-[90px] m-2.5 text-6xl flex items-center justify-center rounded-full border-4 cursor-pointer border-teal-500">
             <RiMailSendFill />
