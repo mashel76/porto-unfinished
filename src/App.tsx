@@ -9,7 +9,7 @@ function App() {
     // Hide the div after 5 seconds
     const timeoutId = setTimeout(() => {
       setShowDiv(false);
-    }, 1000); // 5000 milliseconds (5 seconds)
+    }, 2000); // 5000 milliseconds (5 seconds)
 
     // Clear the timeout to prevent it from running if the component unmounts
     return () => clearTimeout(timeoutId);
