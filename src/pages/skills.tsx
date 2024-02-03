@@ -37,7 +37,7 @@ const skills = () => {
                 <Progress classNames={{
                     track: "drop-shadow-md border border-default",
                     indicator: "bg-gradient-to-r from-teal-200 to-teal-500",
-                }} value={10} />
+                }} value={90} />
                 <div className="flex flex-row items-center gap-2">
                     PYTHON
                     <FaPython />

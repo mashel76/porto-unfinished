@@ -1,20 +1,22 @@
-import { Popover, PopoverTrigger, PopoverContent, Button } from "@nextui-org/react";
+import { Popover, PopoverTrigger, PopoverContent } from "@nextui-org/react";
 import { RiMailSendFill } from "react-icons/ri";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { motion } from "framer-motion"
+
+
 const contact = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
-      animate={{ x: 20, opacity: 1 }}
+      animate={{ x: 50, opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="mx-10 my-10 flex flex-col gap-24 justify-between">
-      <Popover placement="right" className="w-4/6 h-32">
-        <PopoverTrigger>
-          <Button isIconOnly className="w-32 h-32 text-6xl bg-transparent rounded-full border-4 border-teal-500">
+      className="mx-10 my-20 flex flex-col gap-24">
+      <Popover defaultOpen='true' placement="right-start" className="w-4/6 h-32 text">
+        <PopoverTrigger className="ease-in-out duration-100 scale-110">
+          <a className="w-[90px] h-[90px] m-2.5 text-6xl flex items-center justify-center rounded-full border-4 cursor-pointer border-teal-500">
             <RiMailSendFill />
-          </Button>
+          </a>
         </PopoverTrigger>
         <PopoverContent className="bg-teal-500 mx-2">
           <div className="px-1 py-2">
@@ -22,11 +24,11 @@ const contact = () => {
           </div>
         </PopoverContent>
       </Popover>
-      <Popover placement="right" className="w-4/6 h-32">
-        <PopoverTrigger>
-          <Button isIconOnly className="w-32 h-32 text-6xl bg-transparent rounded-full border-4 border-teal-500">
+      <Popover placement="right-start" className="w-4/6 h-32">
+        <PopoverTrigger className="ease-in-out duration-100 scale-110">
+          <a className="w-[90px] h-[90px] m-2.5 text-6xl flex items-center justify-center rounded-full border-4 cursor-pointer border-teal-500">
             <FaWhatsapp />
-          </Button>
+          </a>
         </PopoverTrigger>
         <PopoverContent className="bg-teal-500 mx-2">
           <div className="px-1 py-2 ">
@@ -34,11 +36,11 @@ const contact = () => {
           </div>
         </PopoverContent>
       </Popover>
-      <Popover placement="right" className="w-4/6 h-32">
-        <PopoverTrigger>
-          <Button isIconOnly className="w-32 h-32 text-6xl bg-transparent rounded-full border-4 border-teal-500">
+      <Popover placement="right-start" className="w-4/6 h-32">
+        <PopoverTrigger className="ease-in-out duration-100 scale-110">
+          <a className="w-[90px] h-[90px] m-2.5 text-4xl flex items-center justify-center rounded-full border-4 cursor-pointer border-teal-500">
             <FaLocationDot />
-          </Button>
+          </a>
         </PopoverTrigger>
         <PopoverContent className="bg-teal-500 mx-2">
           <div className="px-1 py-2 ">
